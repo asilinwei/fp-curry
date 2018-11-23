@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>curry-test</title>
+</head>
+<body>
+	<script src="curry.js"></script>
+	<script type="text/javascript">
+	var foo = function(a, b, c, d, e) {
+		return [a, b, c, d, e];
+	};
+
+	var curried = curry(foo);
+
+	console.log(curried(1, 2, 3, 4, 5));
+	console.log(curried(1, 2, 3, 4)(5));
+	console.log(curried(1, 2, 3)(4)(5));
+	console.log(curried(1, 2)(3)(4)(5));
+	console.log(curried(1)(2)(3)(4)(5));
+	</script>
+</body>
+</html>
