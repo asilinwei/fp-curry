@@ -14,7 +14,7 @@ This is only a toy or a test, so can not use in production environment.
 Example:
 ```
 var foo = function(a, b, c, d) {
-	return [a, b, c, d];
+  return [a, b, c, d];
 };
 
 var curried = curry(foo);
