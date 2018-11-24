@@ -18,6 +18,14 @@
 	console.log(curried(1, 2, 3)(4)(5));
 	console.log(curried(1, 2)(3)(4)(5));
 	console.log(curried(1)(2)(3)(4)(5));
+	console.log(curried(1)(2, 3, 4, 5));
+	console.log(curried(1)(2)(3, 4, 5));
+	console.log(curried(1)(2)(3)(4, 5));
+	console.log(curried(1, 2)(3, 4)(5));
+	console.log(curried(1)(2, 3, 4)(5));
+	console.log(curried(1)(2, 3)(4, 5));
+	console.log(curried(1, 2, 3)(4, 5));
+	console.log(curried(1, 2)(3, 4, 5));
 	</script>
 </body>
 </html>
